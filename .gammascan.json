@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "77c4e1199fbe2d71d5fbf32a96b92451",
-                "projectName": "weixin-java-tools-git",
+                "uid": "3d137f991a6920ce23ece1200cf407a7",
+                "projectName": "weixin-java-remote",
                 "languages": [
                     "JAVA"
                 ],
@@ -132,12 +132,7 @@
                         "enabled": true,
                         "config": {
                             "rules": [],
-                            "options": [
-                                {
-                                    "name": "mode",
-                                    "value": "git"
-                                }
-                            ]
+                            "options": []
                         }
                     }
                 ]
