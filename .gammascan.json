@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "d49d6c54c0343f83d64b2e734890605a",
-                "projectName": "Teamcity",
+                "uid": "77c4e1199fbe2d71d5fbf32a96b92451",
+                "projectName": "weixin-java-tools-git",
                 "languages": [
                     "JAVA"
                 ],
@@ -54,6 +54,59 @@
                             "rules": [],
                             "options": []
                         }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "coverage": [
+                    {
+                        "name": "clover",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "jacoco",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "binaryReportPath",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": false
+                                },
+                                {
+                                    "name": "xmlReportPath",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": false
+                                }
+                            ]
+                        }
                     }
                 ],
                 "unittest": [
@@ -79,7 +132,12 @@
                         "enabled": true,
                         "config": {
                             "rules": [],
-                            "options": []
+                            "options": [
+                                {
+                                    "name": "mode",
+                                    "value": "git"
+                                }
+                            ]
                         }
                     }
                 ]
