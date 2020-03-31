@@ -101,7 +101,6 @@ public class WxConsts {
   public static class MassMsgType {
     public static final String MPNEWS = "mpnews";
 	
-	
     public static final String TEXT = "text";
     public static final String VOICE = "voice";
     public static final String IMAGE = "image";
