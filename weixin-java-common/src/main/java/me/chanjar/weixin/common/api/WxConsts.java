@@ -61,6 +61,8 @@ public class WxConsts {
     /**
      * 图文消息（点击跳转到图文消息页面）.
      */
+	 
+	 
     public static final String MPNEWS = "mpnews";
     /**
      * 发送文件（CP专用）.
@@ -98,6 +100,8 @@ public class WxConsts {
    */
   public static class MassMsgType {
     public static final String MPNEWS = "mpnews";
+	
+	
     public static final String TEXT = "text";
     public static final String VOICE = "voice";
     public static final String IMAGE = "image";
