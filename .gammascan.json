@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "68dbf70ab1b2c056344f7826efa4d52f",
-                "projectName": "Java_TC_Remote",
+                "uid": "97ff7389616b374f2dc2a258d5f1626b",
+                "projectName": "weixin-java-tool-Teamcity",
                 "languages": [
                     "JAVA"
                 ],
@@ -25,52 +25,6 @@
                 "includePaths": []
             },
             "modules": {
-                "codeissues": [
-                    {
-                        "name": "pmd",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "javaVersion",
-                                    "type": "text",
-                                    "value": "1.8",
-                                    "required": false
-                                },
-                                {
-                                    "name": "ruleSets",
-                                    "type": "text",
-                                    "value": "rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "gamma_java",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": []
-                        }
-                    },
-                    {
-                        "name": "gamma_generic",
-                        "enabled": false,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    }
-                ],
                 "coverage": [
                     {
                         "name": "clover",
@@ -109,6 +63,52 @@
                         }
                     }
                 ],
+                "codeissues": [
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "gamma_java",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "pmd",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "javaVersion",
+                                    "type": "text",
+                                    "value": "1.8",
+                                    "required": false
+                                },
+                                {
+                                    "name": "ruleSets",
+                                    "type": "text",
+                                    "value": "rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
                 "unittest": [
                     {
                         "name": "junit",
@@ -132,7 +132,12 @@
                         "enabled": true,
                         "config": {
                             "rules": [],
-                            "options": []
+                            "options": [
+                                {
+                                    "name": "mode",
+                                    "value": "git"
+                                }
+                            ]
                         }
                     }
                 ]
