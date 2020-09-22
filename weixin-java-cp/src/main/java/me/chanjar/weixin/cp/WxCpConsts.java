@@ -124,6 +124,8 @@ public class WxCpConsts {
      * 标签成员变更事件.
      */
     public static final String UPDATE_TAG = "update_tag";
+    
+    System.out.println("Hi");
 
   }
 }
